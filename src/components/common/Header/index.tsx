@@ -30,7 +30,7 @@ const Header = () => {
     <Box
       sx={{
         ...styles.wrapper,
-        backgroundColor: isScrolled ? "#D0E8F526" : "#0C2C3A",
+        backgroundColor: isScrolled ? "white" : "#0C2C3A",
       }}
     >
       <Box sx={{ ...styles.header, color }}>ANGELS AND DEMONS</Box>

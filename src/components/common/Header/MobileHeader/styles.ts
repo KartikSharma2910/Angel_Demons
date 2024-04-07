@@ -18,7 +18,7 @@ const styles: Styles = {
       borderTop: "none",
       borderBottom: "none",
       padding: "20px",
-      backgroundColor: "#D0E8F526",
+      backgroundColor: "white",
       height: `calc(100% - 65px)`,
     },
   },

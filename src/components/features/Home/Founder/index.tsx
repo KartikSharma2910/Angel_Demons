@@ -1,11 +1,10 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Section } from "components/common";
 
 const Founder = () => {
   return (
-    <Box component="section" id="founders">
+    <Section id="founders" heading="Founders" description="Meet our founders">
       Founder
-    </Box>
+    </Section>
   );
 };
 

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import About from "./About";
-import Banner from "./Banner";
+import BannerSlides from "./BannerSlides";
 import Founder from "./Founder";
 import Inspirations from "./Inspirations";
 import Investor from "./Investor";
@@ -10,7 +10,7 @@ import Steps from "./Steps";
 const Home = () => {
   return (
     <Fragment>
-      <Banner />
+      <BannerSlides />
       <About />
       <Programme />
       <Investor />

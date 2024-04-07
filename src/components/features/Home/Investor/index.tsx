@@ -1,11 +1,14 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Section } from "components/common";
 
 const Investor = () => {
   return (
-    <Box component="section" id="investors">
+    <Section
+      id="investors"
+      heading="ANGELS AND DEMONS"
+      description="Meet Your Potential Saviors or Adversaries"
+    >
       Investor
-    </Box>
+    </Section>
   );
 };
 

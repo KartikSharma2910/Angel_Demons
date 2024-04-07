@@ -31,7 +31,7 @@ const styles: Styles = {
   listItem: {
     fontSize: "14px",
     letterSpacing: "1.5px",
-    fontWeight: 300,
+    fontWeight: 400,
   },
 };
 

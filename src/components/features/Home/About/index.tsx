@@ -1,11 +1,15 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Box } from "@mui/system";
+import { Section } from "components/common";
 
 const About = () => {
   return (
-    <Box component="section" id="about">
-      About
-    </Box>
+    <Section
+      id="about"
+      heading="About"
+      description="The Journey to Entrepreneurial Triumph"
+    >
+      <Box>About the Author</Box>
+    </Section>
   );
 };
 

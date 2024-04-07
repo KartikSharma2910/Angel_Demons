@@ -1,11 +1,14 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Section } from "components/common";
 
 const Programme = () => {
   return (
-    <Box component="section" id="program">
+    <Section
+      id="program"
+      heading="Who Is This Show For Section"
+      description="Empowering Dreams, Igniting Success"
+    >
       Programme
-    </Box>
+    </Section>
   );
 };
 

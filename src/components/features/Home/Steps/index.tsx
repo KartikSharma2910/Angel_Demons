@@ -1,11 +1,14 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Section } from "components/common";
 
 const Steps = () => {
   return (
-    <Box component="section" id="steps">
+    <Section
+      id="steps"
+      heading="HOW TO APPLY"
+      description="The Path to Angels and Demons"
+    >
       Steps
-    </Box>
+    </Section>
   );
 };
 
