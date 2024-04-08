@@ -9,6 +9,7 @@ const styles: Styles = {
     alignItems: "center",
     position: "sticky",
     top: 0,
+    backgroundColor: "#0C2C3A",
     justifyContent: "space-between",
     padding: "0px 4%",
     transition: "all 0.4s",

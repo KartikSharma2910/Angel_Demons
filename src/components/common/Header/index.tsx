@@ -27,12 +27,7 @@ const Header = () => {
   const color = isScrolled ? "#8C8C8C" : "white";
 
   return (
-    <Box
-      sx={{
-        ...styles.wrapper,
-        backgroundColor: isScrolled ? "white" : "#0C2C3A",
-      }}
-    >
+    <Box sx={styles.wrapper}>
       <Box sx={{ ...styles.header, color }}>ANGELS AND DEMONS</Box>
       {screenType === "TABLET" || screenType === "MOBILE" ? (
         <MobileHeader isScrolled={isScrolled} />

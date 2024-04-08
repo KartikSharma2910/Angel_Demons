@@ -4,10 +4,14 @@ const styles: Styles = {
   wrapper: {
     display: "flex",
     flexDirection: "column",
-    gap: "4rem",
+    gap: {
+      mobile: "2rem",
+      tablet: "3rem",
+      laptop: "4rem",
+    },
     width: "100%",
     height: "100vh",
-    padding: "4rem 0px",
+    padding: "4rem 20px",
   },
 
   header: {
@@ -27,7 +31,10 @@ const styles: Styles = {
   },
 
   description: {
-    fontSize: "30px",
+    fontSize: {
+      mobile: "20px",
+      tablet: "30px",
+    },
     fontWeight: 500,
   },
 };
