@@ -24,11 +24,77 @@ const styles: Styles = {
   },
 
   content: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "40px",
+    width: {
+      mobile: "80%",
+      laptop: "50%",
+    },
     zIndex: 10,
-    color: "white",
     position: "absolute",
-    top: "50%",
-    left: "50%",
+    top: 150,
+    right: {
+      mobile: 50,
+      tablet: 100,
+      laptop: 50,
+    },
+  },
+
+  heading: {
+    fontSize: {
+      mobile: "12px",
+      tablet: "14px",
+    },
+    color: "#8C8C8C",
+  },
+
+  container: {
+    display: "flex",
+    rowGap: "30px",
+    alignItems: {
+      mobile: "center",
+      tablet: "flex-start",
+    },
+    flexDirection: {
+      mobile: "column",
+      tablet: "row",
+    },
+  },
+
+  dataContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
+
+  numContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "50%",
+    height: "100px",
+    textAlign: "center",
+  },
+
+  number: {
+    fontSize: {
+      mobile: "30px",
+      tablet: "40px",
+    },
+    fontWeight: 600,
+    color: "#1B5D7A",
+  },
+
+  text: {
+    fontSize: {
+      mobile: "12px",
+      tablet: "14px",
+    },
+    fontWeight: 200,
+    letterSpacing: "2px",
   },
 };
 
