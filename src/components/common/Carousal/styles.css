@@ -23,7 +23,7 @@
 .prev {
   position: absolute;
   top: 150px;
-  left: -30px;
+  left: -50px;
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
@@ -32,7 +32,7 @@
 .next {
   position: absolute;
   top: 150px;
-  right: -30px;
+  right: -50px;
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
@@ -51,14 +51,15 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  opacity: 0.6;
+  opacity: 0.8;
+  cursor: pointer;
   background-size: cover;
   background-position: center;
 }
 
-/* .bg-image-container:hover {
+.bg-image-container:hover {
   filter: grayscale(100%);
-} */
+}
 
 .gradient {
   width: 100%;
@@ -81,7 +82,8 @@
 }
 
 .label {
-  font-size: 10px;
+  font-size: 28px;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 5px;
   color: #ccc;

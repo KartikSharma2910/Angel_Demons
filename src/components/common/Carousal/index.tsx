@@ -1,7 +1,8 @@
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Box } from "@mui/material";
 import { useResponsive } from "hooks/useResponsive";
 import { useRef } from "react";
-import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -10,7 +11,6 @@ import "./styles.css";
 
 type CarousalProps = {
   data: ImageContainerProps[];
-  label?: string;
   slideNum: number;
   mobileSlides?: number;
   tabSlides?: number;
@@ -22,7 +22,6 @@ type CarousalProps = {
 
 const Carousal = ({
   data,
-  label,
   slideNum,
   mobileSlides = 1,
   tabSlides = 3,
@@ -61,7 +60,7 @@ const Carousal = ({
       <Box className="wrapper">
         {screenType !== "MOBILE" && showLeftArrow && (
           <Box onClick={() => sliderRef.current.slickPrev()} className="prev">
-            <FiArrowLeftCircle style={{ fontSize: 24 }} />
+            <ArrowBackIosNewIcon style={{ fontSize: 24 }} />
           </Box>
         )}
         <Slider {...settings} ref={sliderRef}>
@@ -71,7 +70,7 @@ const Carousal = ({
                 key={index}
                 image={item.image}
                 text={item.text}
-                label={label}
+                label={item.label}
                 height={item.height}
                 borderRadius={item.borderRadius}
               />
@@ -79,7 +78,7 @@ const Carousal = ({
         </Slider>
         {screenType !== "MOBILE" && showRightArrow && (
           <Box onClick={() => sliderRef.current.slickNext()} className="next">
-            <FiArrowRightCircle style={{ fontSize: 24 }} />
+            <ArrowForwardIosIcon style={{ fontSize: 24 }} />
           </Box>
         )}
       </Box>

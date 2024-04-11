@@ -14,7 +14,7 @@ const ImageContainer = ({
   label,
   text,
   height = "300px",
-  borderRadius = "10px",
+  borderRadius = "8px",
 }: ImageContainerProps) => {
   return (
     <Box

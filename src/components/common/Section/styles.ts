@@ -16,6 +16,7 @@ const styles: Styles = {
 
   header: {
     display: "flex",
+    width: "100%",
     flexDirection: "column",
     gap: "30px",
     alignItems: "center",
@@ -31,6 +32,8 @@ const styles: Styles = {
   },
 
   description: {
+    width: "100%",
+    textAlign: "center",
     fontSize: {
       mobile: "20px",
       tablet: "30px",

@@ -5,7 +5,7 @@ import styles from "./styles";
 type SectionProps = {
   id: string;
   heading: string;
-  description: string;
+  description?: React.ReactNode | string;
   children: React.ReactNode;
   customStyles?: SxProps;
 };
