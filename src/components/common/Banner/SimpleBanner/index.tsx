@@ -6,10 +6,10 @@ import styles from "./styles";
 
 export type SimpleBannerProps = {
   carousalData: ImageContainerProps[];
-  heading: string;
-  subHeading: string;
-  description: string;
-  buttonLabel: string;
+  heading?: string;
+  subHeading?: string;
+  description?: string;
+  buttonLabel?: string;
 };
 
 const SimpleBanner = ({
@@ -37,11 +37,13 @@ const SimpleBanner = ({
         </Box>
         <Box sx={styles.subHeading}>{subHeading}</Box>
         <Box sx={styles.description}>{description}</Box>
-        <Button
-          as="SimpleButton"
-          label={buttonLabel}
-          customStyles={styles.button}
-        />
+        {buttonLabel && (
+          <Button
+            as="SimpleButton"
+            label={buttonLabel}
+            customStyles={styles.button}
+          />
+        )}
       </Box>
     </Box>
   );

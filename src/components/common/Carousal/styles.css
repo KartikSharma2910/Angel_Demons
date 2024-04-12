@@ -57,9 +57,9 @@
   background-position: center;
 }
 
-.bg-image-container:hover {
+/* .bg-image-container:hover {
   filter: grayscale(100%);
-}
+} */
 
 .gradient {
   width: 100%;

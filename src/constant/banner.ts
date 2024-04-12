@@ -5,3 +5,11 @@ export const homeBanner = [
     borderRadius: "0",
   },
 ];
+
+export const successStoriesBanner = [
+  {
+    image: "/success.jpeg",
+    height: "100vh",
+    borderRadius: "0",
+  },
+];
