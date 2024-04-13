@@ -1,4 +1,9 @@
-import { Home, Registration, SuccessStories } from "components/features";
+import {
+  Home,
+  Registration,
+  SuccessReadPage,
+  SuccessStories,
+} from "components/features";
 import React from "react";
 
 type RouteType = {
@@ -18,6 +23,10 @@ const routes: RouteType[] = [
   {
     path: "/registration",
     element: <Registration />,
+  },
+  {
+    path: "/success-read/:id",
+    element: <SuccessReadPage />,
   },
 ];
 

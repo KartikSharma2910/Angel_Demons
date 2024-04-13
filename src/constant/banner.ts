@@ -13,3 +13,11 @@ export const successStoriesBanner = [
     borderRadius: "0",
   },
 ];
+
+export const successReadPageBanner = [
+  {
+    image: "/readPage1.jpeg",
+    height: "100vh",
+    borderRadius: "0",
+  },
+];
