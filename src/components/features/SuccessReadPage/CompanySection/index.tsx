@@ -1,4 +1,12 @@
 import { Box } from "@mui/material";
+import {
+  businessStage,
+  contactData,
+  features,
+  marketingCards,
+  overviewData,
+} from "constant/SuccessReadPage";
+import { Fragment } from "react/jsx-runtime";
 import styles from "./styles";
 
 const CompanySection = () => {
@@ -24,60 +32,77 @@ const CompanySection = () => {
         </Box>
       </Box>
       <Box sx={styles.contantBox}>
-        <Box sx={styles.contentHeading}>Overview</Box>
-        <Box sx={styles.overviewWrapper}>
-          <Box sx={styles.overviewContent}>
-            <Box sx={styles.overviewHeading}>Year Founded</Box>
-            <Box sx={styles.overviewData}>2022</Box>
-          </Box>
-          <Box sx={styles.overviewContent}>
-            <Box sx={styles.overviewHeading}>Status</Box>
-            <Box sx={styles.overviewData}>Private</Box>
-          </Box>
-          <Box sx={styles.overviewContent}>
-            <Box sx={styles.overviewHeading}>Latest Deal Type</Box>
-            <Box sx={styles.overviewData}>Seed</Box>
-          </Box>
-          <Box sx={styles.overviewContent}>
-            <Box sx={styles.overviewHeading}>Latest Deal Amount</Box>
-            <Box sx={styles.overviewData}>$4M</Box>
-          </Box>
-          <Box sx={styles.overviewContent}>
-            <Box sx={styles.overviewHeading}>Investors</Box>
-            <Box sx={styles.overviewData}>7</Box>
-          </Box>
-        </Box>
+        {overviewData.map(({ heading, subData }, index) => (
+          <Fragment key={index}>
+            <Box sx={styles.contentHeading}>{heading}</Box>
+            <Box sx={styles.dataContainer}>
+              {subData.map(({ label, text }, index) => (
+                <Box key={index} sx={styles.data}>
+                  <Box sx={styles.dataHeading}>{label}</Box>
+                  <Box sx={styles.dataDescription}>{text}</Box>
+                </Box>
+              ))}
+            </Box>
+          </Fragment>
+        ))}
       </Box>
       <Box sx={styles.contantBox}>
-        <Box sx={styles.contentHeading}>Contact Information</Box>
-        <Box sx={styles.contactWrapper}>
-          <Box sx={styles.contactsContent}>
-            <Box sx={styles.overviewHeading}>Website</Box>
-            <Box sx={styles.contactText}>www.techg.com</Box>
-          </Box>
-          <Box sx={styles.contactsContent}>
-            <Box sx={styles.overviewHeading}>Primary Industry</Box>
-            <Box sx={styles.contactText}>Primary Industry</Box>
-          </Box>
-          <Box sx={styles.contactsContent}>
-            <Box sx={styles.overviewHeading}>Corporate Office</Box>
-            <Box sx={styles.contactText}>Cupertino, CA 95014,United States</Box>
-          </Box>
-          <Box sx={styles.contactsContent}>
-            <Box sx={styles.overviewHeading}>Target market</Box>
-            <Box sx={styles.contactText}>B2B,B2C,B2B2C,Franchise</Box>
-          </Box>
-          <Box sx={styles.contactsContent}>
-            <Box sx={styles.overviewHeading}>Other Industries</Box>
-            <Box sx={styles.contactText}>Business/Productivity Software</Box>
-          </Box>
-          <Box sx={styles.contactsContent}>
-            <Box sx={styles.overviewHeading}>Revenue Stream</Box>
-            <Box sx={styles.contactText}>
-              Subscription,Freemium,Advertising,Pay Per Transaction
+        {contactData.map(({ heading, subData }, index) => (
+          <Fragment key={index}>
+            <Box sx={styles.contentHeading}>{heading}</Box>
+            <Box sx={styles.businessDataContainer}>
+              {subData.map(({ label, text }, index) => (
+                <Box key={index} sx={styles.businessData}>
+                  <Box sx={styles.dataHeading}>{label}</Box>
+                  <Box sx={styles.businessDescription}>{text}</Box>
+                </Box>
+              ))}
             </Box>
+          </Fragment>
+        ))}
+      </Box>
+      <Box sx={styles.contantBox}>
+        {businessStage.map(({ heading, subData }, index) => (
+          <Fragment key={index}>
+            <Box sx={styles.contentHeading}>{heading}</Box>
+            <Box sx={styles.businessStageWrapper}>
+              {subData.map(({ label, text }, index) => (
+                <Box key={index} sx={styles.businessStage}>
+                  <Box sx={styles.businessStageHeading}>{label}</Box>
+                  <Box sx={styles.businessStageDescription}>{text}</Box>
+                </Box>
+              ))}
+            </Box>
+          </Fragment>
+        ))}
+      </Box>
+      <Box sx={styles.contantBox}>
+        <Box sx={styles.featureContainer}>
+          {features.map(({ icon: Icon, label }, index) => (
+            <Box key={index} sx={styles.featureBox}>
+              <Box>
+                <Icon sx={styles.icon} />
+              </Box>
+              <Box sx={styles.featureDescription}>{label}</Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      <Box sx={styles.marketingContainer}>
+        <Box sx={styles.cardBox}>
+          <Box sx={styles.contentHeading}>Marketing</Box>
+          <Box sx={styles.card}>
+            {marketingCards.map(({ icon, feature, rate, text }, index) => (
+              <Box sx={styles.cardContent}>
+                <Box>{icon}</Box>
+                <Box>{feature}</Box>
+                <Box>{rate}</Box>
+                <Box>{text}</Box>
+              </Box>
+            ))}
           </Box>
         </Box>
+        <Box sx={styles.cardBox}>B</Box>
       </Box>
     </Box>
   );

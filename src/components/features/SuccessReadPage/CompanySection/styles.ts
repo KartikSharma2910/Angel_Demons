@@ -6,7 +6,7 @@ const styles: Styles = {
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    gap: 3,
+    gap: 5,
     padding: "3rem",
   },
 
@@ -36,7 +36,7 @@ const styles: Styles = {
     display: "flex",
     width: "100%",
     flexDirection: "column",
-    gap: "30px",
+    gap: 6,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -57,48 +57,129 @@ const styles: Styles = {
     color: "#8C8C8C",
   },
 
-  overviewWrapper: {
-    display: "flex",
+  dataContainer: {
     width: "80%",
-    justifyContent: "space-evenly",
+    display: "flex",
     alignItems: "center",
+    justifyContent: "space-between",
   },
 
-  overviewContent: {
+  data: {
     display: "flex",
-    flexDirection: "column",
+    width: "25%",
     alignItems: "center",
+    flexDirection: "column",
     gap: "15px",
   },
 
-  overviewHeading: {
+  dataHeading: {
     fontSize: "14px",
+    opacity: 0.8,
     fontWeight: 200,
   },
 
-  overviewData: {
-    fontSize: "18px",
-    fontWeight: 600,
+  dataDescription: {
+    fontSize: "16px",
   },
 
-  contactWrapper: {
+  businessDataContainer: {
+    width: "60%",
     display: "flex",
-    width: "80%",
     flexWrap: "wrap",
-    gap: 3,
+    justifyContent: "space-between",
+    gap: "30px",
+    alignItems: "center",
+  },
+
+  businessData: {
+    width: "30%",
+    display: "flex",
+    flexDirection: "column",
+    gap: "15px",
+  },
+
+  businessDescription: {
+    fontSize: "12px",
+  },
+
+  businessStageWrapper: {
+    display: "flex",
+    width: "90%",
     justifyContent: "space-between",
     alignItems: "center",
   },
 
-  contactsContent: {
+  businessStage: {
+    width: "20%",
     display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     flexDirection: "column",
     gap: "15px",
-    width: "30%",
   },
 
-  contactText: {
-    fontSize: "14px",
+  businessStageHeading: {
+    fontSize: "30px",
+    color: "#1B5D7A",
+  },
+
+  businessStageDescription: {
+    fontSize: "12px",
+    opacity: 0.8,
+  },
+
+  featureContainer: {
+    display: "flex",
+    width: "80%",
+    justifyContent: "space-around",
+    alignItems: "center",
+    marginTop: "3rem",
+  },
+
+  featureBox: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "10px",
+  },
+
+  icon: {
+    fontSize: "40px",
+    color: "#1B5D7A",
+  },
+
+  featureDescription: {
+    fontSize: "12px",
+  },
+
+  marketingContainer: {
+    width: "90%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+
+  cardBox: {
+    width: "48%",
+    border: "1px solid red",
+  },
+
+  card: {
+    border: "1px solid white",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+
+  cardContent: {
+    width: "45%",
+    height: "100%",
+    border: "1px solid pink",
+    display: "flex",
+    flexDirection: "column",
+    gap: "20px",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
 };
 
