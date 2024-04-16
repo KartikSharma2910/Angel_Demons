@@ -11,6 +11,10 @@ const styles: Styles = {
 
   imageContainer: {
     width: "60%",
+    display: {
+      mobile: "none",
+      laptop: "block",
+    },
     height: "100%",
   },
 
@@ -26,19 +30,28 @@ const styles: Styles = {
     justifyContent: "center",
     padding: "0 2rem",
     gap: "20px",
-    width: "40%",
+    width: {
+      mobile: "100%",
+      laptop: "40%",
+    },
     height: "100%",
   },
 
   heading: {
     fontSize: "60px",
-    width: "50%",
+    width: {
+      mobile: "100%",
+      laptop: "50%",
+    },
     textTransform: "uppercase",
   },
 
   description: {
     fontSize: "20px",
-    width: "50%",
+    width: {
+      mobile: "100%",
+      laptop: "50%",
+    },
     fontWeight: 200,
   },
 

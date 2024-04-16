@@ -3,6 +3,7 @@ import {
   businessStage,
   contactData,
   features,
+  financeCards,
   marketingCards,
   overviewData,
 } from "constant/SuccessReadPage";
@@ -10,6 +11,15 @@ import { Fragment } from "react/jsx-runtime";
 import styles from "./styles";
 
 const CompanySection = () => {
+  function truncateText(text: string, limit: number) {
+    const words = text.split(" ");
+    if (words.length > limit) {
+      return words.slice(0, limit).join(" ") + "...";
+    } else {
+      return text;
+    }
+  }
+
   return (
     <Box sx={styles.wrapper}>
       <Box sx={styles.quoteWrapper}>
@@ -92,17 +102,59 @@ const CompanySection = () => {
         <Box sx={styles.cardBox}>
           <Box sx={styles.contentHeading}>Marketing</Box>
           <Box sx={styles.card}>
-            {marketingCards.map(({ icon, feature, rate, text }, index) => (
-              <Box sx={styles.cardContent}>
-                <Box>{icon}</Box>
-                <Box>{feature}</Box>
-                <Box>{rate}</Box>
-                <Box>{text}</Box>
+            {marketingCards.map(
+              ({ icon: Icon, feature, rate, text }, index) => (
+                <Box sx={styles.cardContent} key={index}>
+                  <Icon sx={styles.cardIcon} />
+                  <Box sx={styles.feature}>{feature}</Box>
+                  <Box sx={styles.rate}>{rate}</Box>
+                  <Box sx={styles.cardText}>{truncateText(text, 30)}</Box>
+                </Box>
+              )
+            )}
+          </Box>
+        </Box>
+        <Box sx={styles.cardBox}>
+          <Box sx={styles.contentHeading}>Finance</Box>
+          <Box sx={styles.card}>
+            {financeCards.map(({ icon: Icon, feature, rate, text }, index) => (
+              <Box sx={styles.cardContent} key={index}>
+                <Icon sx={styles.cardIcon} />
+                <Box sx={styles.feature}>{feature}</Box>
+                <Box sx={styles.rate}>{rate}</Box>
+                <Box sx={styles.cardText}>{truncateText(text, 30)}</Box>
               </Box>
             ))}
           </Box>
         </Box>
-        <Box sx={styles.cardBox}>B</Box>
+      </Box>
+      <Box sx={styles.contantBox}>
+        <Box sx={styles.contentHeading}>USP</Box>
+        <Box sx={styles.uspText}>
+          <Box sx={styles.headLine}>
+            In a crowded market, Tech Genius Solutions stands out with its:
+          </Box>
+          <Box sx={styles.bulletPoints}>
+            <li>
+              <span className="heading">Focus on:</span> We prioritize water
+              conservation and increased crop yield for small-scale farmers,
+              directly addressing a critical pain point in the industry.
+            </li>
+            <li>
+              <span className="heading">Easy-to-use technology:</span> Our
+              platform is designed for user-friendliness, ensuring accessibility
+              even for those with limited technical expertise.
+            </li>
+            <li>
+              <span className="heading">
+                Scalable and sustainable solutions:
+              </span>
+               We offer solutions that can grow alongside our users' needs while
+              promoting environmental responsibility, helping farmers achieve up
+              to 30% water savings and 10% increased crop yields.
+            </li>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );

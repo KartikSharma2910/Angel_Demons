@@ -19,16 +19,26 @@ const styles: Styles = {
   },
 
   quote: {
-    width: "70%",
+    width: {
+      mobile: "100%",
+      laptop: "70%",
+    },
     margin: "0 auto",
     textAlign: "center",
-    fontSize: "24px",
+    fontSize: {
+      mobile: "18px",
+      tablet: "20px",
+      laptop: "24px",
+    },
   },
 
   quoteBy: {
     textAlign: "end",
     fontSize: "14px",
-    width: "70%",
+    width: {
+      mobile: "100%",
+      laptop: "70%",
+    },
     margin: "0 auto",
   },
 
@@ -46,27 +56,43 @@ const styles: Styles = {
       mobile: "14px",
       tablet: "16px",
     },
+    textAlign: "center",
     color: "#1E6F7E",
   },
 
   text: {
     textAlign: "center",
-    width: "80%",
+    width: {
+      mobile: "100%",
+      tablet: "80%",
+    },
     margin: "0 auto",
-    fontSize: "14px",
+    fontSize: {
+      mobile: "12px",
+      tablet: "14px",
+    },
     color: "#8C8C8C",
   },
 
   dataContainer: {
-    width: "80%",
+    width: {
+      mobile: "100%",
+      laptop: "80%",
+    },
     display: "flex",
     alignItems: "center",
+    flexWrap: "wrap",
+    rowGap: 3,
     justifyContent: "space-between",
   },
 
   data: {
     display: "flex",
-    width: "25%",
+    width: {
+      mobile: "46%",
+      tablet: "30%",
+      laptop: "20%",
+    },
     alignItems: "center",
     flexDirection: "column",
     gap: "15px",
@@ -156,16 +182,19 @@ const styles: Styles = {
     width: "90%",
     display: "flex",
     alignItems: "center",
+    backgroundColor: "#050E0F",
+    padding: "3% 2%",
     justifyContent: "space-between",
   },
 
   cardBox: {
+    display: "flex",
+    flexDirection: "column",
+    gap: 5,
     width: "48%",
-    border: "1px solid red",
   },
 
   card: {
-    border: "1px solid white",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -173,13 +202,57 @@ const styles: Styles = {
 
   cardContent: {
     width: "45%",
-    height: "100%",
-    border: "1px solid pink",
     display: "flex",
     flexDirection: "column",
     gap: "20px",
+    padding: "25px 15px",
+    height: "380px",
+    backgroundColor: "#081311",
     justifyContent: "space-between",
     alignItems: "center",
+  },
+
+  cardIcon: {
+    fontSize: "60px",
+  },
+
+  feature: {
+    fontSize: "12px",
+  },
+
+  rate: {
+    fontSize: "30px",
+    color: "#1B5D7A",
+  },
+
+  cardText: {
+    fontSize: "12px",
+    textAlign: "center",
+    color: "#8C8C8C",
+  },
+
+  uspText: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "20px",
+    width: "80%",
+    margin: "0 auto",
+    fontSize: "14px",
+    color: "#8C8C8C",
+    "& .heading": {
+      color: "white",
+      opacity: 0.8,
+    },
+  },
+
+  headLine: {
+    textAlign: "center",
+  },
+
+  bulletPoints: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "20px",
   },
 };
 
