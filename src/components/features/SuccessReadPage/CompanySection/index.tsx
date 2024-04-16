@@ -1,16 +1,30 @@
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 import { Box } from "@mui/material";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
 import {
   businessStage,
   contactData,
+  faq,
   features,
   financeCards,
+  founders,
   marketingCards,
   overviewData,
 } from "constant/SuccessReadPage";
+import { useState } from "react";
 import { Fragment } from "react/jsx-runtime";
 import styles from "./styles";
 
 const CompanySection = () => {
+  const [expanded, setExpanded] = useState<string | false>(false);
+
+  const handleChange = (panel) => (_, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   function truncateText(text: string, limit: number) {
     const words = text.split(" ");
     if (words.length > limit) {
@@ -154,6 +168,71 @@ const CompanySection = () => {
               to 30% water savings and 10% increased crop yields.
             </li>
           </Box>
+        </Box>
+      </Box>
+      <Box sx={styles.contantBox}>
+        <Box sx={styles.contentHeading}>Founders</Box>
+        <Box sx={styles.foundersWrapper}>
+          {founders.map(
+            ({ imageUrl, founderName, position, split, about }, index) => {
+              return (
+                <Box key={index} sx={styles.founderCard}>
+                  <Box
+                    component="img"
+                    src={imageUrl}
+                    alt="founder"
+                    sx={styles.founderImage}
+                  />
+                  <Box sx={styles.founderContent}>
+                    <Box sx={styles.founderName}>{founderName}</Box>
+                    <Box sx={styles.founderPosition}>{position}</Box>
+                    <Box sx={styles.founderSplit}>{split}</Box>
+                    <Box sx={styles.founderAbout}>{about}</Box>
+                  </Box>
+                </Box>
+              );
+            }
+          )}
+        </Box>
+      </Box>
+      <Box sx={styles.contantBox}>
+        <Box sx={styles.contentHeading}>FAQ</Box>
+        <Box sx={styles.accordianContainer}>
+          {faq.map(({ heading, description }, index) => {
+            return (
+              <Accordion
+                square
+                expanded={expanded === `panel${index}`}
+                onChange={handleChange(`panel${index}`)}
+              >
+                <AccordionSummary
+                  expandIcon={
+                    <Box
+                      sx={{
+                        ...styles.accordianIcon,
+                        color:
+                          expanded === `panel${index}` ? "#1B5D7A" : "white",
+                      }}
+                    >
+                      {expanded === `panel${index}` ? (
+                        <RemoveIcon />
+                      ) : (
+                        <AddIcon />
+                      )}
+                    </Box>
+                  }
+                >
+                  <Box sx={styles.accordianSummaryWrapper}>
+                    <Box sx={styles.accordianText}>0{index + 1}</Box>
+                    <Box sx={styles.accordianText}>{heading}</Box>
+                  </Box>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Box sx={styles.accordianDescription}>{description}</Box>
+                </AccordionDetails>
+              </Accordion>
+            );
+          })}
         </Box>
       </Box>
     </Box>

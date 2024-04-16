@@ -156,3 +156,59 @@ export const financeCards = [
     text: "We're strategically developing our business model with a clear path towards achieving positive EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) within 24 months. This focus on profitability ensures long-term financial sustainability.",
   },
 ];
+
+export const founders = [
+  {
+    imageUrl: "/rishi.jpeg",
+    founderName: "Rishi Kapoor",
+    position: "CEO & Co-founder",
+    split: "Equal Split: CEO (52%)",
+    about:
+      "IIT grad turned CEO, Rahul Sharma's passion for innovation led him to co-found Tech Genius Solutions. With a background in [Engineering field] from [IIT College name], he's dedicated to tackling [Problem Tech Genius Solutions solves] in the Indian market.",
+  },
+  {
+    imageUrl: "/rahul.jpeg",
+    founderName: "Rahul Sharma",
+    position: "COO & Co-founder",
+    split: "Equal Split: C0O (48%)",
+    about:
+      "An MBA graduate and business whiz, Amit Kapoor co-founded Tech Genius Solutions alongside Rahul Sharma.  Skilled in [Area of expertise], Amit brings a results-driven approach to empower Indian businesses through technology.",
+  },
+];
+
+export const faq = [
+  {
+    heading: "What industries does TechGenius Solutions cater to",
+    description:
+      "TechGenius Solutions provides innovative software solutions and AI-driven technologies tailored for a wide range of industries, including but not limited to healthcare, finance, retail, manufacturing, and education. Our versatile solutions can be customized to meet the unique needs of diverse business sectors.",
+  },
+  {
+    heading: "How does TechGenius Solutions ensure data security and privacy?",
+    description:
+      "TechGenius Solutions provides innovative software solutions and AI-driven technologies tailored for a wide range of industries, including but not limited to healthcare, finance, retail, manufacturing, and education. Our versatile solutions can be customized to meet the unique needs of diverse business sectors.",
+  },
+  {
+    heading:
+      "Can TechGenius Solutions integrate with existing systems and platforms?",
+    description:
+      "TechGenius Solutions provides innovative software solutions and AI-driven technologies tailored for a wide range of industries, including but not limited to healthcare, finance, retail, manufacturing, and education. Our versatile solutions can be customized to meet the unique needs of diverse business sectors.",
+  },
+  {
+    heading:
+      "What support and training services does TechGenius Solutions offer?",
+    description:
+      "TechGenius Solutions provides innovative software solutions and AI-driven technologies tailored for a wide range of industries, including but not limited to healthcare, finance, retail, manufacturing, and education. Our versatile solutions can be customized to meet the unique needs of diverse business sectors.",
+  },
+  {
+    heading:
+      "How does TechGenius Solutions stay ahead of emerging technological trends?",
+    description:
+      "TechGenius Solutions provides innovative software solutions and AI-driven technologies tailored for a wide range of industries, including but not limited to healthcare, finance, retail, manufacturing, and education. Our versatile solutions can be customized to meet the unique needs of diverse business sectors.",
+  },
+  {
+    heading:
+      "Can TechGenius Solutions accommodate custom development requests?",
+    description:
+      "TechGenius Solutions provides innovative software solutions and AI-driven technologies tailored for a wide range of industries, including but not limited to healthcare, finance, retail, manufacturing, and education. Our versatile solutions can be customized to meet the unique needs of diverse business sectors.",
+  },
+];

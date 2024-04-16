@@ -254,6 +254,105 @@ const styles: Styles = {
     flexDirection: "column",
     gap: "20px",
   },
+
+  foundersWrapper: {
+    width: {
+      mobile: "100%",
+      laptop: "80%",
+    },
+    rowGap: 2,
+    display: "flex",
+    flexDirection: {
+      mobile: "column",
+      tablet: "row",
+    },
+    justifyContent: "space-between",
+  },
+
+  founderCard: {
+    border: "1px solid #4D5051",
+    width: {
+      mobile: "100%",
+      tablet: "46%",
+    },
+  },
+
+  founderImage: {
+    width: "100%",
+    objectFit: "cover",
+    height: "350px",
+  },
+
+  founderContent: {
+    display: "flex",
+    gap: "20px",
+    height: "300px",
+    padding: "15px",
+    backgroundColor: "#111816",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  founderName: {
+    fontSize: "30px",
+    fontWeight: 600,
+  },
+
+  founderPosition: {
+    fontSize: "14px",
+  },
+
+  founderSplit: {
+    fontSize: "14px",
+  },
+
+  founderAbout: {
+    fontSize: "14px",
+    textAlign: "center",
+    color: "#8C8C8C",
+  },
+
+  accordianContainer: {
+    width: "80%",
+    "& .MuiAccordion-root": {
+      backgroundColor: "transparent",
+      borderBottom: "1px solid #8C8C8C",
+      padding: "20px",
+      color: "white",
+    },
+  },
+
+  accordianIcon: {
+    display: "flex",
+    color: "white",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    height: {
+      xs: "41px",
+      sm: "48px",
+    },
+    width: "50px",
+  },
+
+  accordianSummaryWrapper: {
+    display: "flex",
+    gap: "15px",
+    alignItems: "center",
+  },
+
+  accordianText: {
+    fontSize: "18px",
+    color: "#1B5D7A",
+    fontWeight: 500,
+  },
+
+  accordianDescription: {
+    fontSize: "14px",
+    color: "#8C8C8C",
+    paddingLeft: "5%",
+  },
 };
 
 export default styles;
