@@ -1,6 +1,7 @@
 import {
+  AngelRegistration,
+  DemonRegistration,
   Home,
-  Registration,
   SuccessReadPage,
   SuccessStories,
 } from "components/features";
@@ -21,8 +22,12 @@ const routes: RouteType[] = [
     element: <SuccessStories />,
   },
   {
-    path: "/registration",
-    element: <Registration />,
+    path: "/demon-investor",
+    element: <DemonRegistration />,
+  },
+  {
+    path: "/angel-investor",
+    element: <AngelRegistration />,
   },
   {
     path: "/success-read/:id",

@@ -6,17 +6,17 @@ const styles: Styles = {
     backgroundColor: "transparent",
     border: "1px solid white",
     fontSize: {
-      mobile: "12px",
-      tablet: "13px",
-      laptop: "15px",
+      xs: "12px",
+      sm: "13px",
+      md: "15px",
     },
     minWidth: {
-      mobile: "175px",
-      tablet: "180px",
+      xs: "175px",
+      sm: "180px",
     },
     height: {
-      mobile: "35px",
-      laptop: "40px",
+      xs: "35px",
+      md: "40px",
     },
     textTransform: "capitalize",
     "&:hover": {

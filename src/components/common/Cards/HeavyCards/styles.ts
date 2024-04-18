@@ -10,9 +10,9 @@ const styles: Styles = {
   image: {
     width: "100%",
     height: {
-      mobile: "300px",
-      tablet: "400px",
-      laptop: "450px",
+      xs: "300px",
+      sm: "400px",
+      md: "450px",
     },
     objectFit: "cover",
     objectPosition: "center",
@@ -29,26 +29,26 @@ const styles: Styles = {
 
   brand: {
     fontSize: {
-      mobile: "16px",
-      tablet: "18px",
-      laptop: "20px",
+      xs: "16px",
+      sm: "18px",
+      md: "20px",
     },
     fontWeight: 600,
   },
 
   users: {
     fontSize: {
-      mobile: "12px",
-      tablet: "14px",
-      laptop: "16px",
+      xs: "12px",
+      sm: "14px",
+      md: "16px",
     },
     fontWeight: 200,
   },
 
   category: {
     fontSize: {
-      mobile: "12px",
-      laptop: "14px",
+      xs: "12px",
+      md: "14px",
     },
     "& .subCategory": {
       color: "#8C8C8C",
@@ -57,8 +57,8 @@ const styles: Styles = {
 
   description: {
     fontSize: {
-      mobile: "12px",
-      laptop: "14px",
+      xs: "12px",
+      md: "14px",
     },
     color: "#8C8C8C",
     textAlign: "center",
@@ -85,8 +85,8 @@ const styles: Styles = {
   chip: {
     color: "white",
     fontSize: {
-      mobile: "10px",
-      laptop: "11px",
+      xs: "10px",
+      md: "11px",
     },
     backgroundColor: "#2A3231",
   },

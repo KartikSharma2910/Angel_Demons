@@ -12,16 +12,16 @@ const styles: Styles = {
 
   upperFooter: {
     width: {
-      mobile: "100%",
-      tablet: "100%",
-      laptop: "60%",
+      xs: "100%",
+      sm: "100%",
+      md: "60%",
     },
     height: "150px",
     margin: "0 auto",
     display: "flex",
     flexDirection: {
-      mobile: "column",
-      laptop: "row",
+      xs: "column",
+      md: "row",
     },
     alignItems: "center",
     justifyContent: "center",
@@ -64,8 +64,8 @@ const styles: Styles = {
 
   lowerFooter: {
     width: {
-      mobile: "90%",
-      laptop: "80%",
+      xs: "90%",
+      md: "80%",
     },
     margin: "0 auto",
     display: "flex",
@@ -76,8 +76,8 @@ const styles: Styles = {
   footerMapper: {
     display: "flex",
     flexDirection: {
-      mobile: "column",
-      laptop: "row",
+      xs: "column",
+      md: "row",
     },
     rowGap: "20px",
     alignItems: "center",

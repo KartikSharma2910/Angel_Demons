@@ -10,8 +10,8 @@ const styles: Styles = {
 
   container: {
     display: {
-      mobile: "none",
-      laptop: "block",
+      xs: "none",
+      md: "block",
     },
     width: "40%",
     height: "100%",
@@ -25,8 +25,8 @@ const styles: Styles = {
     gap: "30px",
     justifyContent: "center",
     width: {
-      mobile: "100%",
-      laptop: "60%",
+      xs: "100%",
+      md: "60%",
     },
     height: "100%",
     overflow: "hidden",

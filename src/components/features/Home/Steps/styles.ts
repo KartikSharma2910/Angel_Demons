@@ -14,16 +14,16 @@ const styles: Styles = {
 
   leftContainer: {
     display: {
-      mobile: "none",
-      laptop: "block",
+      xs: "none",
+      md: "block",
     },
     width: "40%",
   },
 
   rightContainer: {
     width: {
-      mobile: "100%",
-      laptop: "60%",
+      xs: "100%",
+      md: "60%",
     },
     display: "flex",
     flexDirection: "column",

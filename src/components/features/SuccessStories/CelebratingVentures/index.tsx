@@ -1,9 +1,13 @@
 import { Box } from "@mui/material";
 import { Cards, Section } from "components/common";
 import { cardsData } from "constant/ventures";
+import { useState } from "react";
+import InvestmentForm from "../InvestmentForm";
 import styles from "./styles";
 
 const CelebratingVentures = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <Section
       id="celebration"
@@ -30,11 +34,13 @@ const CelebratingVentures = () => {
           <Cards
             key={index}
             customStyles={styles.card}
+            buttonClick={() => setOpen(true)}
             as="HeavyCards"
             {...data}
           />
         ))}
       </Box>
+      <InvestmentForm open={open} handleClose={() => setOpen(false)} />
     </Section>
   );
 };

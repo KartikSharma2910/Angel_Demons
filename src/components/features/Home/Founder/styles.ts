@@ -17,8 +17,8 @@ const styles: Styles = {
     justifyContent: "space-evenly",
     padding: "1.5rem 0px",
     width: {
-      mobile: "100%",
-      laptop: "45%",
+      xs: "100%",
+      md: "45%",
     },
     backgroundColor: "#101503",
     marginBottom: "2rem",
@@ -42,9 +42,9 @@ const styles: Styles = {
 
   description: {
     width: {
-      mobile: "100%",
-      tablet: "70%",
-      laptop: "45%",
+      xs: "100%",
+      sm: "70%",
+      md: "45%",
     },
     fontSize: "14px",
     textAlign: "center",

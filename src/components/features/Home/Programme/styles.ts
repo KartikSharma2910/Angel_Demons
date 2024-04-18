@@ -30,23 +30,23 @@ const styles: Styles = {
     justifyContent: "center",
     gap: "40px",
     width: {
-      mobile: "80%",
-      laptop: "50%",
+      xs: "80%",
+      md: "50%",
     },
     zIndex: 10,
     position: "absolute",
     top: 150,
     right: {
-      mobile: 50,
-      tablet: 100,
-      laptop: 50,
+      xs: 50,
+      sm: 100,
+      md: 50,
     },
   },
 
   heading: {
     fontSize: {
-      mobile: "12px",
-      tablet: "14px",
+      xs: "12px",
+      sm: "14px",
     },
     color: "#8C8C8C",
   },
@@ -55,12 +55,12 @@ const styles: Styles = {
     display: "flex",
     rowGap: "30px",
     alignItems: {
-      mobile: "center",
-      tablet: "flex-start",
+      xs: "center",
+      sm: "flex-start",
     },
     flexDirection: {
-      mobile: "column",
-      tablet: "row",
+      xs: "column",
+      sm: "row",
     },
   },
 
@@ -81,8 +81,8 @@ const styles: Styles = {
 
   number: {
     fontSize: {
-      mobile: "30px",
-      tablet: "40px",
+      xs: "30px",
+      sm: "40px",
     },
     fontWeight: 600,
     color: "#1B5D7A",
@@ -90,8 +90,8 @@ const styles: Styles = {
 
   text: {
     fontSize: {
-      mobile: "12px",
-      tablet: "14px",
+      xs: "12px",
+      sm: "14px",
     },
     fontWeight: 200,
     letterSpacing: "2px",

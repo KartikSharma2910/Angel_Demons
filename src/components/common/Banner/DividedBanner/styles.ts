@@ -12,8 +12,8 @@ const styles: Styles = {
   imageContainer: {
     width: "60%",
     display: {
-      mobile: "none",
-      laptop: "block",
+      xs: "none",
+      md: "block",
     },
     height: "100%",
   },
@@ -31,8 +31,8 @@ const styles: Styles = {
     padding: "0 2rem",
     gap: "20px",
     width: {
-      mobile: "100%",
-      laptop: "40%",
+      xs: "100%",
+      md: "40%",
     },
     height: "100%",
   },
@@ -40,8 +40,8 @@ const styles: Styles = {
   heading: {
     fontSize: "60px",
     width: {
-      mobile: "100%",
-      laptop: "50%",
+      xs: "100%",
+      md: "50%",
     },
     textTransform: "uppercase",
   },
@@ -49,8 +49,8 @@ const styles: Styles = {
   description: {
     fontSize: "20px",
     width: {
-      mobile: "100%",
-      laptop: "50%",
+      xs: "100%",
+      md: "50%",
     },
     fontWeight: 200,
   },

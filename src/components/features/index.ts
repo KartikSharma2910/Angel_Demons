@@ -1,6 +1,14 @@
+import ChoosePath from "./ChoosePath";
 import Home from "./Home";
-import Registration from "./Registration";
-import SuccessStories from "./SuccessStories";
+import { AngelRegistration, DemonRegistration } from "./Registration";
 import SuccessReadPage from "./SuccessReadPage";
+import SuccessStories from "./SuccessStories";
 
-export { Home, Registration, SuccessStories, SuccessReadPage };
+export {
+  AngelRegistration,
+  ChoosePath,
+  DemonRegistration,
+  Home,
+  SuccessReadPage,
+  SuccessStories,
+};

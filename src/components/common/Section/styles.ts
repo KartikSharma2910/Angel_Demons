@@ -5,9 +5,9 @@ const styles: Styles = {
     display: "flex",
     flexDirection: "column",
     gap: {
-      mobile: "2rem",
-      tablet: "3rem",
-      laptop: "4rem",
+      xs: "2rem",
+      sm: "3rem",
+      md: "4rem",
     },
     width: "100%",
     height: "100vh",
@@ -25,8 +25,8 @@ const styles: Styles = {
 
   heading: {
     fontSize: {
-      mobile: "14px",
-      tablet: "16px",
+      xs: "14px",
+      sm: "16px",
     },
     color: "#1E6F7E",
   },
@@ -35,8 +35,8 @@ const styles: Styles = {
     width: "100%",
     textAlign: "center",
     fontSize: {
-      mobile: "20px",
-      tablet: "30px",
+      xs: "20px",
+      sm: "30px",
     },
     fontWeight: 500,
   },

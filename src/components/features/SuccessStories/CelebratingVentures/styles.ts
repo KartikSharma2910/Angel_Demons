@@ -11,27 +11,27 @@ const styles: Styles = {
 
   descriptionHead: {
     fontSize: {
-      mobile: "18px",
-      tablet: "20px",
-      laptop: "22px",
+      xs: "18px",
+      sm: "20px",
+      md: "22px",
     },
     width: {
       width: "100%",
-      tablet: "80%",
-      laptop: "40%",
+      sm: "80%",
+      md: "40%",
     },
   },
 
   descriptionDesc: {
     fontSize: {
-      mobile: "12px",
-      tablet: "14px",
-      laptop: "16px",
+      xs: "12px",
+      sm: "14px",
+      md: "16px",
     },
     color: "#8C8C8C",
     width: {
-      mobile: "100%",
-      laptop: "60%",
+      xs: "100%",
+      md: "60%",
     },
   },
 
@@ -46,9 +46,9 @@ const styles: Styles = {
 
   card: {
     width: {
-      mobile: "100%",
-      tablet: "48%",
-      laptop: "32%",
+      xs: "100%",
+      sm: "48%",
+      md: "32%",
     },
   },
 };

@@ -5,8 +5,8 @@ const styles: Styles = {
     display: "flex",
     alignItems: "center",
     flexDirection: {
-      mobile: "column",
-      laptop: "row",
+      xs: "column",
+      md: "row",
     },
     rowGap: "20px",
     justifyContent: "center",
@@ -23,8 +23,8 @@ const styles: Styles = {
   icon: {
     color: "white",
     fontSize: {
-      mobile: "25px",
-      tablet: "35px",
+      xs: "25px",
+      sm: "35px",
     },
   },
 
@@ -38,9 +38,9 @@ const styles: Styles = {
     width: "100%",
     cursor: "pointer",
     height: {
-      mobile: "100%",
-      tablet: "300px",
-      laptop: "100%",
+      xs: "100%",
+      sm: "300px",
+      md: "100%",
     },
     objectFit: "cover",
     objectPosition: "center",
@@ -60,8 +60,8 @@ const styles: Styles = {
 
   heading: {
     fontSize: {
-      mobile: "30px",
-      tablet: "40px",
+      xs: "30px",
+      sm: "40px",
     },
     fontWeight: 600,
     opacity: 0.6,
@@ -76,16 +76,16 @@ const styles: Styles = {
     display: "flex",
     flexWrap: "wrap",
     rowGap: {
-      mobile: "50px",
-      tablet: "20px",
+      xs: "50px",
+      sm: "20px",
     },
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
     marginTop: {
-      mobile: "1.5rem",
-      tablet: "2.5rem",
-      laptop: "1.5rem",
+      xs: "1.5rem",
+      sm: "2.5rem",
+      md: "1.5rem",
     },
   },
 
@@ -95,22 +95,22 @@ const styles: Styles = {
     justifyContent: "center",
     alignItems: "center",
     width: {
-      mobile: "46%",
-      tablet: "33%",
-      laptop: "28%",
+      xs: "46%",
+      sm: "33%",
+      md: "28%",
     },
   },
 
   rotatedSquare: {
     width: {
-      mobile: "130px",
-      tablet: "160px",
-      laptop: "220px",
+      xs: "130px",
+      sm: "160px",
+      md: "220px",
     },
     height: {
-      mobile: "130px",
-      tablet: "160px",
-      laptop: "220px",
+      xs: "130px",
+      sm: "160px",
+      md: "220px",
     },
     transform: "rotate(45deg)",
     overflow: "hidden",
@@ -121,14 +121,14 @@ const styles: Styles = {
 
   squareImageWrapper: {
     width: {
-      mobile: "130px",
-      tablet: "160px",
-      laptop: "220px",
+      xs: "130px",
+      sm: "160px",
+      md: "220px",
     },
     height: {
-      mobile: "130px",
-      tablet: "160px",
-      laptop: "220px",
+      xs: "130px",
+      sm: "160px",
+      md: "220px",
     },
     display: "flex",
     transform: "rotate(45deg)",

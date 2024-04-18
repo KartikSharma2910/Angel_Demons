@@ -11,6 +11,7 @@ export type HeavyCardsProps = {
   description: string;
   stages: string;
   features: string[];
+  buttonClick?: () => void | string;
   customStyles?: SxProps;
 };
 
@@ -19,6 +20,7 @@ const HeavyCards = ({
   brand,
   user,
   category,
+  buttonClick,
   description,
   stages,
   features,
@@ -57,10 +59,11 @@ const HeavyCards = ({
             customStyles={styles.button}
           />
           <Button
-            as="LinkButton"
-            to="/"
+            // as="LinkButton"
+            // to={buttonClick}
             endIcon={<KeyboardArrowRightIcon />}
             label="Invest"
+            onClick={buttonClick}
             customStyles={styles.button}
           />
         </Box>

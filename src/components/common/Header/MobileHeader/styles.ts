@@ -7,12 +7,12 @@ const styles: Styles = {
       position: "fixed",
       zIndex: 100,
       width: {
-        mobile: "250px",
-        tablet: "270px",
+        xs: "250px",
+        sm: "270px",
       },
       maxWidth: {
-        mobile: "300px",
-        tablet: "340px",
+        xs: "300px",
+        sm: "340px",
       },
       borderRadius: 0,
       borderTop: "none",
@@ -52,8 +52,8 @@ const styles: Styles = {
     color: "#8C8C8C",
     padding: "20px 0px 20px 30px",
     fontSize: {
-      mobile: "14px",
-      tablet: "16px",
+      xs: "14px",
+      sm: "16px",
     },
     fontWeight: 500,
     borderBottom: "1px solid #8C8C8C",

@@ -6,8 +6,8 @@ const styles: Styles = {
     borderRadius: "16px",
     fontSize: "15px",
     minWidth: {
-      mobile: "174px",
-      tablet: "185px",
+      xs: "174px",
+      sm: "185px",
     },
     height: "50px",
     textTransform: "capitalize",

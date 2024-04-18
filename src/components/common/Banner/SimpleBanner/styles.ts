@@ -10,8 +10,8 @@ const styles: Styles = {
   textContainer: {
     display: "flex",
     width: {
-      mobile: "90%",
-      tablet: "100%",
+      xs: "90%",
+      sm: "100%",
     },
     flexDirection: "column",
     gap: "30px",
@@ -29,8 +29,8 @@ const styles: Styles = {
 
   heading: {
     fontSize: {
-      mobile: "16px",
-      tablet: "18px",
+      xs: "16px",
+      sm: "18px",
     },
     fontWeight: 500,
     background: "linear-gradient(98.88deg, #6C7BFF -2.99%, #00C2FF 102.28%)",
@@ -38,17 +38,17 @@ const styles: Styles = {
 
   subHeading: {
     fontSize: {
-      mobile: "40px",
-      tablet: "60px",
-      laptop: "70px",
+      xs: "40px",
+      sm: "60px",
+      md: "70px",
     },
     fontWeight: 600,
   },
 
   description: {
     fontSize: {
-      mobile: "16px",
-      tablet: "18px",
+      xs: "16px",
+      sm: "18px",
     },
     fontWeight: 500,
   },

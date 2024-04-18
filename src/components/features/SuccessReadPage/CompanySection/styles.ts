@@ -20,15 +20,15 @@ const styles: Styles = {
 
   quote: {
     width: {
-      mobile: "100%",
-      laptop: "70%",
+      xs: "100%",
+      md: "70%",
     },
     margin: "0 auto",
     textAlign: "center",
     fontSize: {
-      mobile: "18px",
-      tablet: "20px",
-      laptop: "24px",
+      xs: "18px",
+      sm: "20px",
+      md: "24px",
     },
   },
 
@@ -36,8 +36,8 @@ const styles: Styles = {
     textAlign: "end",
     fontSize: "14px",
     width: {
-      mobile: "100%",
-      laptop: "70%",
+      xs: "100%",
+      md: "70%",
     },
     margin: "0 auto",
   },
@@ -53,8 +53,8 @@ const styles: Styles = {
 
   contentHeading: {
     fontSize: {
-      mobile: "14px",
-      tablet: "16px",
+      xs: "14px",
+      sm: "16px",
     },
     textAlign: "center",
     color: "#1E6F7E",
@@ -63,21 +63,21 @@ const styles: Styles = {
   text: {
     textAlign: "center",
     width: {
-      mobile: "100%",
-      tablet: "80%",
+      xs: "100%",
+      sm: "80%",
     },
     margin: "0 auto",
     fontSize: {
-      mobile: "12px",
-      tablet: "14px",
+      xs: "12px",
+      sm: "14px",
     },
     color: "#8C8C8C",
   },
 
   dataContainer: {
     width: {
-      mobile: "100%",
-      laptop: "80%",
+      xs: "100%",
+      md: "80%",
     },
     display: "flex",
     alignItems: "center",
@@ -89,9 +89,9 @@ const styles: Styles = {
   data: {
     display: "flex",
     width: {
-      mobile: "46%",
-      tablet: "30%",
-      laptop: "20%",
+      xs: "46%",
+      sm: "30%",
+      md: "20%",
     },
     alignItems: "center",
     flexDirection: "column",
@@ -257,14 +257,14 @@ const styles: Styles = {
 
   foundersWrapper: {
     width: {
-      mobile: "100%",
-      laptop: "80%",
+      xs: "100%",
+      md: "80%",
     },
     rowGap: 2,
     display: "flex",
     flexDirection: {
-      mobile: "column",
-      tablet: "row",
+      xs: "column",
+      sm: "row",
     },
     justifyContent: "space-between",
   },
@@ -272,8 +272,8 @@ const styles: Styles = {
   founderCard: {
     border: "1px solid #4D5051",
     width: {
-      mobile: "100%",
-      tablet: "46%",
+      xs: "100%",
+      sm: "46%",
     },
   },
 

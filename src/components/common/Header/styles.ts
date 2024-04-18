@@ -17,8 +17,8 @@ const styles: Styles = {
 
   header: {
     fontSize: {
-      mobile: "16px",
-      tablet: "18px",
+      xs: "16px",
+      sm: "18px",
     },
     fontWeight: "bold",
   },

@@ -10,8 +10,8 @@ const styles: Styles = {
 
   leftBox: {
     width: {
-      mobile: "100%",
-      laptop: "60%",
+      xs: "100%",
+      md: "60%",
     },
   },
 
@@ -26,37 +26,37 @@ const styles: Styles = {
   rightBox: {
     position: "absolute",
     left: {
-      mobile: "20%",
-      tablet: "30%",
-      laptop: "50%",
+      xs: "20%",
+      sm: "30%",
+      md: "50%",
     },
     width: {
-      mobile: "60%",
-      tablet: "45%",
-      laptop: "33%",
+      xs: "60%",
+      sm: "45%",
+      md: "33%",
     },
     display: "flex",
     alignItems: {
-      mobile: "center",
-      laptop: "flex-end",
+      xs: "center",
+      md: "flex-end",
     },
     flexDirection: "column",
     gap: {
-      mobile: "2rem",
-      tablet: "3rem",
-      laptop: "4rem",
+      xs: "2rem",
+      sm: "3rem",
+      md: "4rem",
     },
   },
 
   text: {
     fontSize: {
-      mobile: "12px",
-      tablet: "14px",
-      laptop: "16px",
+      xs: "12px",
+      sm: "14px",
+      md: "16px",
     },
     textAlign: {
-      mobile: "center",
-      laptop: "left",
+      xs: "center",
+      md: "left",
     },
     color: "#8C8C8C",
   },
