@@ -66,7 +66,7 @@ const CheckBox = ({
               }}
               value={true}
             >
-              {"Yes"}
+              Yes
               {renderCheckBox(field.value)}
             </ToggleButton>
 
@@ -74,7 +74,7 @@ const CheckBox = ({
               sx={{ ...styles.btn, color: error && "error.main" }}
               value={false}
             >
-              {"No"}
+              No
               {renderCheckBox(
                 field.value === null ? field.value : !field.value
               )}

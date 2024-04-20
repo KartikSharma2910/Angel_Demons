@@ -59,12 +59,10 @@ const HeavyCards = ({
             customStyles={styles.button}
           />
           <Button
-            // as="LinkButton"
-            // to={buttonClick}
             endIcon={<KeyboardArrowRightIcon />}
             label="Invest"
             onClick={buttonClick}
-            customStyles={styles.button}
+            customStyles={styles.modalOpenerButton}
           />
         </Box>
       </Box>

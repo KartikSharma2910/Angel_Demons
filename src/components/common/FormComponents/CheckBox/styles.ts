@@ -2,16 +2,20 @@ import { Styles } from "types/common";
 
 const styles: Styles = {
   wrapper: {
+    width: "100%",
+    position: "relative",
     "& .MuiToggleButton-root.Mui-selected": {
       backgroundColor: "transparent",
-      color: "custom.label",
+      color: "#189EB8",
       fontWeight: "bold",
       "&:hover": {
         backgroundColor: "transparent",
       },
     },
+    justifyContent: "space-between",
     display: {
       sm: "flex",
+      alignItems: "center",
     },
   },
 
@@ -20,7 +24,7 @@ const styles: Styles = {
       xs: "10px",
       sm: "14px",
     },
-    color: "custom.label",
+    color: "white",
   },
 
   checkBox: {
@@ -32,6 +36,8 @@ const styles: Styles = {
       xs: "15px",
       sm: "20px",
     },
+    filter: "contrast(0%)",
+    color: "white",
   },
 
   toggle: {

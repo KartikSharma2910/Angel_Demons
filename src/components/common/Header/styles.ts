@@ -20,6 +20,7 @@ const styles: Styles = {
       xs: "16px",
       sm: "18px",
     },
+    cursor: "pointer",
     fontWeight: "bold",
   },
 

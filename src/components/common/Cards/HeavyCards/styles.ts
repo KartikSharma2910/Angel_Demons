@@ -94,6 +94,17 @@ const styles: Styles = {
   button: {
     minWidth: "130px",
   },
+
+  modalOpenerButton: {
+    minWidth: "130px",
+    borderRadius: 0,
+    background: "transparent",
+    border: "1px solid white",
+    height: {
+      xs: "35px",
+      md: "40px",
+    },
+  },
 };
 
 export default styles;

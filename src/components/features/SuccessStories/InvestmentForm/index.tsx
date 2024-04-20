@@ -8,6 +8,7 @@ const InvestmentForm = ({ open, handleClose }) => {
     control,
     formState: { errors },
     trigger,
+    clearErrors,
   } = useForm({
     defaultValues: {
       name: "",
@@ -72,6 +73,7 @@ const InvestmentForm = ({ open, handleClose }) => {
                 name="intrestedInTechGenius"
                 label="Do you intend to invest in Tech Genius Solutions?"
                 control={control}
+                clearErrors={clearErrors}
                 errors={errors}
                 rules={{ required: "This is a required field" }}
               />
@@ -87,6 +89,7 @@ const InvestmentForm = ({ open, handleClose }) => {
                 name="successfulInvestmentExit"
                 label="Have you previously had a successful investment exit?"
                 control={control}
+                clearErrors={clearErrors}
                 errors={errors}
                 rules={{ required: "This is a required field" }}
               />
